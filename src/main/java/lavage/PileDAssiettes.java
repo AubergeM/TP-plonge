@@ -5,7 +5,7 @@ import java.util.List;
 
 class PileDAssiettes {
 
-	private final static int MAX = 10;
+	private final static int MAX = 12;
 	private final List<Assiette> myList = new LinkedList<>();
 
 	private boolean isEmpty() {

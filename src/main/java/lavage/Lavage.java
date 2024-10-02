@@ -12,6 +12,7 @@ public class Lavage {
 		Laveur l2 = new Laveur(pileAssiettes); l2.start();
 		Laveur l3 = new Laveur(pileAssiettes); l3.start();
 		Essuyeur e = new Essuyeur(pileAssiettes); e.start();
+		Essuyeur f = new Essuyeur(pileAssiettes); f.start();
 		//Essuyeur e2 = new Essuyeur(pileAssiettes); e2.start();
 		//Essuyeur e3 = new Essuyeur(pileAssiettes); e3.start();
 
