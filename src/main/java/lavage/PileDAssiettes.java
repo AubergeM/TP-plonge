@@ -16,9 +16,13 @@ class PileDAssiettes {
 		return (myList.size() >= MAX);
 	}
 
-	public void push(Assiette assiette) throws InterruptedException {
+	synchronized public void push(Assiette assiette) throws InterruptedException {
+		while (isFull()){
+			wait();
+		}
 		myList.add(assiette);
 		System.out.printf("la pile contient %d assiettes%n", myList.size());
+		notifyAll(); //notifier l'ajout d'une assiette
 	}
 
 	synchronized public Assiette pop() throws InterruptedException {

@@ -19,3 +19,5 @@ public class Assiette {
 	}
 
 }
+//Non, il n'y a pas d'incohérences, pas de doublons car il y a le synchronized qui permet d'empêcher que plusieurs threads aient 
+//la même assiette.
